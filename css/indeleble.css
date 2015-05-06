@@ -1,0 +1,1895 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+@font-face {
+  font-family: '_HelveticaNeue';
+  src: url('../fonts/HelveticaNeueLTStd-Md.eot');
+  src: url('../fonts/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTStd-Md.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Md.ttf') format('truetype'), url('../fonts/HelveticaNeueLTStd-Md.svg#HelveticaRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+._HelveticaNeue {
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+}
+body {
+  background-color: #ffffff;
+}
+.transparente {
+  background: none;
+  border: none;
+  outline: none;
+}
+[class*="sprite"]:not(.posDistinta) {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.spriteBase {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url('../img/sprites.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+#logoIndeleble {
+  background-position: 0 0;
+  display: block;
+  height: 85px;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  width: 135px;
+}
+#iconoPortafolio {
+  background-position: 0 -91px;
+  display: block;
+  height: 61px;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  width: 38px;
+}
+#iconoServicios {
+  background-position: -42px -91px;
+  display: block;
+  height: 61px;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  width: 63px;
+}
+#iconoSomos {
+  background-position: -110px -90px;
+  display: block;
+  height: 62px;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  width: 50px;
+}
+#iconoContactanos {
+  background-position: -165px -90px;
+  display: block;
+  height: 62px;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  width: 43px;
+}
+.divisorMenuHeader {
+  background-position: -251px 0;
+  display: block;
+  height: 110px;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  width: 1px;
+}
+#logoIndelebleCont {
+  background-position: -1px -263px;
+  display: block;
+  height: 188px;
+  margin: 15px 0 0 93px;
+  padding: 0;
+  position: inherit;
+  width: 251px;
+}
+#flechaAtras {
+  background-position: -215px -84px;
+  vertical-align: sub;
+  display: inline-block;
+  height: 23px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 14px;
+}
+a:hover #iconoPortafolio,
+a.vistaActiva #iconoPortafolio {
+  background-position: 0 -158px;
+}
+a:hover #iconoServicios,
+a.vistaActiva #iconoServicios {
+  background-position: -42px -158px;
+}
+a:hover #iconoSomos,
+a.vistaActiva #iconoSomos {
+  background-position: -110px -158px;
+}
+a:hover #iconoContactanos,
+a.vistaActiva #iconoContactanos {
+  background-position: -165px -158px;
+}
+a.enlaces-normales,
+span.frase-normal-resaltada {
+  color: #00bce4;
+}
+#cabeceraGeneral {
+  z-index: 2;
+  background-color: #0079c2;
+  border-bottom: 5px solid rgba(0, 121, 194, 0.24);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  height: 42px;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+  -moz-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+  -ms-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+  -o-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+  transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+}
+#cabeceraGeneral.activado {
+  height: 200px;
+  -webkit-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+  -moz-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+  -ms-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+  -o-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+  transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+}
+#cabeceraGeneral #cajaNavegacionCabecera {
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  height: auto;
+  margin: 38px auto 0 auto;
+  padding: 0;
+  position: relative;
+  width: 565px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -moz-transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -ms-transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -o-transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+}
+#cabeceraGeneral #cajaNavegacionCabecera.visible {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+  -webkit-transition: opacity 300ms linear 200ms;
+  -moz-transition: opacity 300ms linear 200ms;
+  -ms-transition: opacity 300ms linear 200ms;
+  -o-transition: opacity 300ms linear 200ms;
+  transition: opacity 300ms linear 200ms;
+}
+#cabeceraGeneral #cajaNavegacionCabecera ul.nav {
+  margin: 0;
+  width: 100%;
+}
+#cabeceraGeneral .linksNavCabecera {
+  color: #00bce4;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  min-width: 73px;
+  padding: 0 12px;
+  text-align: center;
+  text-shadow: none;
+  width: auto;
+}
+#cabeceraGeneral .linksNavCabecera.vistaActiva {
+  cursor: default;
+}
+#cabeceraGeneral .linksNavCabecera span {
+  position: relative;
+  width: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: opacity 200ms linear 0ms;
+  -moz-transition: opacity 200ms linear 0ms;
+  -ms-transition: opacity 200ms linear 0ms;
+  -o-transition: opacity 200ms linear 0ms;
+  transition: opacity 200ms linear 0ms;
+}
+#cabeceraGeneral .linksNavCabecera:hover span,
+#cabeceraGeneral .linksNavCabecera.vistaActiva span {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+}
+#cabeceraGeneral .linksNavCabecera .spriteBase {
+  margin: 20px auto 8px auto;
+}
+#cabeceraGeneral .linksNavCabecera .spriteBase#logoIndeleble {
+  margin-top: 16px;
+}
+#btnActivarMenuCabecera {
+  background-position: 0 -225px;
+  z-index: 2;
+  display: block;
+  height: 38px;
+  margin: 0 0 0 -104px;
+  padding: 0;
+  position: inherit;
+  width: 209px;
+  left: 50%;
+  position: absolute;
+  top: 33px;
+  -webkit-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+  -moz-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+  -ms-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+  -o-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+  transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
+}
+#btnActivarMenuCabecera.activado {
+  top: 191px;
+  -webkit-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+  -moz-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+  -ms-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+  -o-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+  transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms;
+}
+#pieGeneral {
+  z-index: 2;
+  height: 60px;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+#pieGeneral .container {
+  background-color: #818285;
+  height: 200px;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -o-border-radius: 80px;
+  -khtml-border-radius: 80px;
+  border-radius: 80px;
+  behavior: url("../css/PIE.htc");
+}
+#pieGeneral #formBoletin {
+  margin: 14px 0 0 0;
+}
+#pieGeneral #formBoletin label {
+  color: #ffffff;
+  display: block;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+  margin-bottom: 3px;
+}
+#pieGeneral #formBoletin #campoBoletin {
+  border: none;
+  font-size: 10px;
+  height: 12px;
+  line-height: 10px;
+  width: 140px;
+  -moz-border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+  -khtml-border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
+  behavior: url("../css/PIE.htc");
+}
+#pieGeneral #formBoletin #btnFormBoletin {
+  background: none;
+  background-color: #58595b;
+  border: none;
+  color: #ffffff;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+  height: 20px;
+  text-shadow: none;
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  -o-border-radius: 0 6px 6px 0;
+  -khtml-border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
+  behavior: url("../css/PIE.htc");
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  behavior: url("../css/PIE.htc");
+}
+#pieGeneral #textoCorp {
+  color: #c3c3c3;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+  margin-top: 36px;
+  text-align: center;
+}
+#pieGeneral .enlacesSociales {
+  display: block;
+  float: right;
+  margin: 18px 10px 0 0;
+}
+#pieGeneral #socialFacebook {
+  background-position: -140px 0;
+  height: 31px;
+  width: 32px;
+}
+#pieGeneral #socialFacebook:hover {
+  background-position: -140px -36px;
+}
+#pieGeneral #socialTwitter {
+  background-position: -176px 0;
+  height: 31px;
+  width: 32px;
+}
+#pieGeneral #socialTwitter:hover {
+  background-position: -176px -36px;
+}
+#pieGeneral #socialGplus {
+  background-position: -212px 0px;
+  height: 31px;
+  margin-right: 55px;
+  width: 32px;
+}
+#pieGeneral #socialGplus:hover {
+  background-position: -212px -36px;
+}
+#cuerpoGeneral {
+  position: relative;
+  z-index: 1;
+  height: 1090px;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#cuerpoGeneral .container {
+  position: relative;
+}
+#cuerpoGeneral .container.tapaInicial {
+  height: 706px;
+  margin-top: 175px;
+}
+#cuerpoGeneral .container.contenidoVista {
+  height: 832px;
+  margin-top: 47px;
+}
+#cuerpoGeneral #contHome {
+  height: 727px;
+  width: 572px;
+  margin-top: 180px;
+}
+#cuerpoGeneral #adornoPie {
+  margin: 250px auto 0 auto;
+  position: relative;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms;
+  -moz-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms;
+  -ms-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms;
+  -o-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms;
+  transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms;
+}
+#cuerpoGeneral #adornoPie.visible {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+}
+#cuerpoGeneral .itemsCentrados {
+  left: 50%;
+}
+.cajaLateralContenido {
+  height: 0;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -moz-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -ms-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -o-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+}
+.cajaLateralContenido.latIzq {
+  width: 366px;
+  bottom: 0;
+  left: 50px;
+  position: absolute;
+}
+.cajaLateralContenido.latDer {
+  width: 402px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.cajaLateralContenido.latDer div.texto {
+  margin-top: 375px;
+}
+.cajaLateralContenido.cajaCentral {
+  width: 940px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas {
+  background-color: #00b3e3;
+  border: 3px solid #ffffff;
+  display: block;
+  height: 215px;
+  margin: 0 0 15px 0;
+  padding: 15px 50px 0 45px;
+  position: relative;
+  width: 839px;
+  -moz-border-radius: 62px 0 62px 0;
+  -webkit-border-radius: 62px 0 62px 0;
+  -o-border-radius: 62px 0 62px 0;
+  -khtml-border-radius: 62px 0 62px 0;
+  border-radius: 62px 0 62px 0;
+  behavior: url("../css/PIE.htc");
+  -webkit-box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.25);
+  behavior: url("../css/PIE.htc");
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas .cajaCarousel {
+  visibility: hidden;
+  z-index: 1;
+  display: block;
+  height: 203px;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  width: 839px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  left: 45px;
+  position: absolute;
+  top: 15px;
+  -webkit-transition: opacity 500ms linear 0ms, visibility 100ms linear 300ms;
+  -moz-transition: opacity 500ms linear 0ms, visibility 100ms linear 300ms;
+  -ms-transition: opacity 500ms linear 0ms, visibility 100ms linear 300ms;
+  -o-transition: opacity 500ms linear 0ms, visibility 100ms linear 300ms;
+  transition: opacity 500ms linear 0ms, visibility 100ms linear 300ms;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas .cajaCarousel.carouselActivo {
+  visibility: visible;
+  z-index: 2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+  -webkit-transition: visibility 100ms linear 0ms, opacity 500ms linear 0ms;
+  -moz-transition: visibility 100ms linear 0ms, opacity 500ms linear 0ms;
+  -ms-transition: visibility 100ms linear 0ms, opacity 500ms linear 0ms;
+  -o-transition: visibility 100ms linear 0ms, opacity 500ms linear 0ms;
+  transition: visibility 100ms linear 0ms, opacity 500ms linear 0ms;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante {
+  height: 200px;
+  margin: 300px 0 0 0;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 400ms;
+  -moz-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 400ms;
+  -ms-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 400ms;
+  -o-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 400ms;
+  transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 400ms;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante.visible {
+  margin-top: -70px;
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+  -webkit-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms, visibility 100ms linear 0ms;
+  -moz-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms, visibility 100ms linear 0ms;
+  -ms-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms, visibility 100ms linear 0ms;
+  -o-transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms, visibility 100ms linear 0ms;
+  transition: margin-top 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms, visibility 100ms linear 0ms;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante div.cajasInfografias {
+  display: none;
+  position: relative;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante div.cajasInfografias.infografiaActiva {
+  display: block;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante div.cajasInfografias div {
+  position: relative;
+  width: 575px;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante div.cajasInfografias div p {
+  clear: both;
+  color: #ffffff;
+  font-weight: normal;
+  margin: 0;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante div.cajasInfografias i.spriteServicios {
+  display: block;
+  left: auto;
+  position: relative;
+  top: auto;
+}
+.cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante div.cajasInfografias i.spriteServicios[id^='tit'] {
+  margin-bottom: 15px;
+}
+.cajaLateralContenido div#cajaControlesGaleriaPortafolio {
+  margin-top: 40px;
+}
+.cajaLateralContenido div#cajaControlesSemiPopupsServicios {
+  display: block;
+  height: 145px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 820px;
+}
+.cajaLateralContenido div#cajaControlesSemiPopupsServicios #franjaPosterior {
+  background-color: #818285;
+  display: block;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  width: 800px;
+  left: 10px;
+  position: absolute;
+  top: 46px;
+}
+.cajaLateralContenido button.enlacesTiposServicios {
+  float: left;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio {
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  display: block;
+  height: 76px;
+  margin: 0;
+  padding: 80px 0 0 0;
+  position: relative;
+  width: 76px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio.activado {
+  color: #818285;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#idCorporativa {
+  background-position: -553px 0;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#disPublicitario {
+  background-position: -553px -89px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#disEditorial {
+  background-position: -553px -179px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#ilustraciones {
+  background-position: -553px -269px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#webMultimedia {
+  background-position: -553px -359px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#idCorporativa:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#idCorporativa.activado {
+  background-position: -643px 0;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#disPublicitario:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#disPublicitario.activado {
+  background-position: -643px -89px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#disEditorial:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#disEditorial.activado {
+  background-position: -643px -179px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#ilustraciones:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#ilustraciones.activado {
+  background-position: -643px -269px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#webMultimedia:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spritePortafolio#webMultimedia.activado {
+  background-position: -643px -359px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  display: block;
+  height: 120px;
+  margin: 0;
+  padding: 125px 0 0 0;
+  position: relative;
+  width: 120px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios.activado {
+  color: #818285;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#idCorporativa {
+  background-position: -58px -1069px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#disPublicitario {
+  background-position: -236px -1069px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#disEditorial {
+  background-position: -415px -1069px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#ilustraciones {
+  background-position: -594px -1069px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#webMultimedia {
+  background-position: -773px -1069px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#idCorporativa:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#idCorporativa.activado {
+  background-position: -58px -1199px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#disPublicitario:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#disPublicitario.activado {
+  background-position: -236px -1199px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#disEditorial:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#disEditorial.activado {
+  background-position: -415px -1199px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#ilustraciones:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#ilustraciones.activado {
+  background-position: -594px -1199px;
+}
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#webMultimedia:hover,
+.cajaLateralContenido button.enlacesTiposServicios.spriteServicios#webMultimedia.activado {
+  background-position: -773px -1199px;
+}
+.cajaLateralContenido button.enlacesTiposServicios + button.spritePortafolio.enlacesTiposServicios {
+  margin-left: 5px;
+}
+.cajaLateralContenido button.enlacesTiposServicios + button.spriteServicios.enlacesTiposServicios {
+  margin-left: 55px;
+}
+.cajaLateralContenido div.cajaCarousel {
+  text-align: center;
+}
+.cajaLateralContenido div.cajaCarousel div.carousel-inner,
+.cajaLateralContenido div.cajaCarousel div.item {
+  height: 177px;
+}
+.cajaLateralContenido div.cajaCarousel div.carousel-inner {
+  margin-bottom: 13px;
+}
+.cajaLateralContenido div.cajaCarousel div.carousel-controles {
+  display: inline-block;
+  position: relative;
+}
+.cajaLateralContenido div.cajaCarousel div.carousel-controles button.carousel-control {
+  float: left;
+  left: auto;
+  right: auto;
+}
+.cajaLateralContenido div.cajaCarousel div.carousel-controles button.control-num {
+  display: block;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+  color: #ffffff;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.cajaLateralContenido div.cajaCarousel button.carousel-control + button.carousel-control {
+  margin-left: 16px;
+}
+.cajaLateralContenido div.cajaCarousel button.imgsMinPortafolio {
+  float: left;
+  display: block;
+  height: 177px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 245px;
+}
+.cajaLateralContenido div.cajaCarousel button.imgsMinPortafolio:hover {
+  background-position: -245px 0;
+}
+.cajaLateralContenido div.cajaCarousel button.imgsMinPortafolio + button.imgsMinPortafolio {
+  margin-left: 52px;
+}
+.cajaLateralContenido p,
+.cajaLateralContenido h1,
+.cajaLateralContenido ul {
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  position: relative;
+}
+.cajaLateralContenido h1 {
+  color: #00b3e3;
+  text-transform: uppercase;
+}
+.cajaLateralContenido h1 span {
+  color: #0079c2;
+  text-transform: none;
+}
+.cajaLateralContenido p + h1 {
+  margin-top: 25px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .cajaLateralContenido p + h1 {
+    margin-top: 20px;
+  }
+}
+.cajaLateralContenido p,
+.cajaLateralContenido ul {
+  color: #6d6e71;
+  text-align: justify;
+}
+.cajaLateralContenido p {
+  margin-bottom: 18px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .cajaLateralContenido p {
+    margin-bottom: 15px;
+  }
+}
+.cajaLateralContenido ul {
+  margin-left: 15px;
+}
+.cajaLateralContenido ul li {
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+.cajaLateralContenido form {
+  margin: 60px 0 0;
+}
+.cajaLateralContenido form label {
+  color: #00bce4;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 8px 0 2px 0;
+}
+.cajaLateralContenido form label label:first-of-type {
+  margin-top: 0;
+}
+.cajaLateralContenido form input,
+.cajaLateralContenido form textarea {
+  background-color: #e4e3e3;
+  border: none;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  height: 16px;
+  margin: 0;
+  padding: 7px 14px 7px 14px;
+  position: inherit;
+  width: 372px;
+  -moz-border-radius: 15px 0 15px 0;
+  -webkit-border-radius: 15px 0 15px 0;
+  -o-border-radius: 15px 0 15px 0;
+  -khtml-border-radius: 15px 0 15px 0;
+  border-radius: 15px 0 15px 0;
+  behavior: url("../css/PIE.htc");
+}
+.cajaLateralContenido form textarea {
+  height: 102px;
+  resize: none;
+}
+.cajaLateralContenido form button {
+  background-color: #00bce4;
+  border: none;
+  color: #ffffff;
+  float: right;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+  height: 20px;
+  margin: 6px 4px 0 0;
+  padding: 0;
+  position: relative;
+  width: 56px;
+  -moz-border-radius: 10px 0 10px 0;
+  -webkit-border-radius: 10px 0 10px 0;
+  -o-border-radius: 10px 0 10px 0;
+  -khtml-border-radius: 10px 0 10px 0;
+  border-radius: 10px 0 10px 0;
+  behavior: url("../css/PIE.htc");
+}
+.cajaLateralContenido form button:hover,
+.cajaLateralContenido form button:active {
+  background-color: #0079c2;
+}
+.contenidoVista .cajaLateralContenido {
+  height: auto;
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+  -webkit-transition: height 100ms linear 0ms, opacity 300ms linear 100ms, visibility 100ms linear 0ms;
+  -moz-transition: height 100ms linear 0ms, opacity 300ms linear 100ms, visibility 100ms linear 0ms;
+  -ms-transition: height 100ms linear 0ms, opacity 300ms linear 100ms, visibility 100ms linear 0ms;
+  -o-transition: height 100ms linear 0ms, opacity 300ms linear 100ms, visibility 100ms linear 0ms;
+  transition: height 100ms linear 0ms, opacity 300ms linear 100ms, visibility 100ms linear 0ms;
+}
+.enFundido .cajaLateralContenido {
+  height: 0;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -moz-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -ms-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -o-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+}
+button#btnVolver {
+  color: #00b3e3;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.cajaLogotemaVista {
+  left: 0;
+  top: 0;
+  display: block;
+  height: 161px;
+  margin: 200px 0 0 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+.cajaLogotemaVista .franjaGris {
+  background-color: #e4e3e3;
+  display: block;
+  height: 48px;
+  margin: 65px 0 0 57px;
+  padding: 0;
+  position: inherit;
+  width: 3000px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.cajaLogotemaVista .franjaGris .tituloVista {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.tapaInicial .animacionTapa {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+}
+.tapaInicial .animacionActivada {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+}
+.tapaInicial #manchaFondo {
+  margin-left: -901px;
+}
+.tapaInicial [id*="Lema"] {
+  margin-left: -296px;
+}
+.tapaInicial [id*="Ilustracion"] {
+  margin-left: -655px;
+}
+.tapaInicial [id*="Btn"] {
+  margin-left: -147px;
+}
+.contenidoVista [id*="Lema"],
+.contenidoVista [id*="Btn"] {
+  visibility: hidden;
+}
+.tapaInicial.enFundido .animacionActivada,
+.contenidoVista.enFundido .animacionTapa {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -moz-transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -ms-transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -o-transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  transition: opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+}
+.contenidoVista .animacionTapa {
+  -webkit-transition: opacity 300ms linear 0ms;
+  -moz-transition: opacity 300ms linear 0ms;
+  -ms-transition: opacity 300ms linear 0ms;
+  -o-transition: opacity 300ms linear 0ms;
+  transition: opacity 300ms linear 0ms;
+}
+.spriteManchas {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url('../img/sprite-manchas.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 706px;
+}
+.tapaInicial #manchaFondo {
+  background-position: 0 0;
+  width: 901px;
+}
+.tapaInicial #manchaFondo.animacionActivada {
+  margin-left: 20px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms;
+}
+.contenidoVista #manchaFondo {
+  background-position: -901px -706px;
+  width: 521px;
+}
+#contSomos.tapaInicial #manchaFondo,
+#contContactanos.tapaInicial #manchaFondo {
+  background-position: 0 -706px;
+}
+#contSomos.contenidoVista #manchaFondo,
+#contContactanos.contenidoVista #manchaFondo {
+  background-position: -901px 0;
+  width: 562px;
+}
+.spriteHome {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url('../img/sprite-tapa-inicio.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+#homeLogo {
+  background-position: -335px 0;
+  height: 362px;
+  width: 572px;
+  margin: 0 0 69px -286px;
+}
+#homeLema {
+  background-position: -335px -368px;
+  height: 25px;
+  width: 193px;
+  margin: 0 0 0 -97px;
+}
+#homePersonajes {
+  background-position: 0 0;
+  height: 437px;
+  width: 329px;
+  margin: 0 0 290px -123px;
+}
+.spritePortafolio {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url('../img/sprite-portafolio.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.spritePortafolio#adornoPie {
+  background-position: 0 -904px;
+  height: 144px;
+  width: 546px;
+}
+.spritePortafolio.carousel-control {
+  display: block;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 10px;
+}
+.spritePortafolio.carousel-control.left {
+  background-position: -686px -714px;
+}
+.spritePortafolio.carousel-control.right {
+  background-position: -709px -714px;
+}
+#cuerpoGeneral #contPortafolio + #adornoPie.visible {
+  margin-top: 6px;
+}
+#portafolioLema {
+  background-position: 0 -646px;
+  margin-top: 195px;
+  width: 328px;
+  height: 240px;
+}
+.tapaInicial #portafolioLema.animacionActivada {
+  margin-left: 483px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+}
+#portafolioIlustracion {
+  background-position: 0 0;
+  height: 620px;
+  margin-top: -25px;
+  width: 540px;
+}
+.tapaInicial #portafolioIlustracion.animacionActivada {
+  margin-left: -15px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+}
+.contenidoVista #portafolioIlustracion {
+  margin: -60px 0 0 -55px;
+}
+#portafolioBtn {
+  background-position: -420px -822px;
+  margin-top: 450px;
+  width: 147px;
+  height: 41px;
+}
+#portafolioBtn:hover {
+  background-position: -573px -822px;
+}
+.tapaInicial #portafolioBtn.animacionActivada {
+  margin-left: 555px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+}
+#iconoGrisPortafolio {
+  background-position: -339px -643px;
+  width: 105px;
+  height: 161px;
+}
+#portafolioTitulo {
+  background-position: -443px -646px;
+  left: 67px;
+  width: 278px;
+  height: 49px;
+}
+div.modal#modalPortafolio {
+  border: none;
+  height: 600px;
+  margin: -300px 0 0 -400px;
+  width: 800px;
+  -moz-border-radius: 150px 0 150px 0;
+  -webkit-border-radius: 150px 0 150px 0;
+  -o-border-radius: 150px 0 150px 0;
+  -khtml-border-radius: 150px 0 150px 0;
+  border-radius: 150px 0 150px 0;
+  behavior: url("../css/PIE.htc");
+}
+div.modal#modalPortafolio button.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 15px 15px 0 0;
+}
+div.modal#modalPortafolio p.cargando {
+  color: #999999;
+  font-size: 18px;
+  height: 20px;
+  font-family: "_HelveticaNeue";
+  font-weight: normal;
+  line-height: 20px;
+  margin: -10px 0 0 -50px;
+  text-align: center;
+  visibility: hidden;
+  width: 100px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: opacity 300ms linear 0ms, visibility 100ms linear 200ms;
+  -moz-transition: opacity 300ms linear 0ms, visibility 100ms linear 200ms;
+  -ms-transition: opacity 300ms linear 0ms, visibility 100ms linear 200ms;
+  -o-transition: opacity 300ms linear 0ms, visibility 100ms linear 200ms;
+  transition: opacity 300ms linear 0ms, visibility 100ms linear 200ms;
+}
+div.modal#modalPortafolio p.cargando.visible {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+  -webkit-transition: visibility 100ms linear 0ms, opacity 300ms linear 0ms;
+  -moz-transition: visibility 100ms linear 0ms, opacity 300ms linear 0ms;
+  -ms-transition: visibility 100ms linear 0ms, opacity 300ms linear 0ms;
+  -o-transition: visibility 100ms linear 0ms, opacity 300ms linear 0ms;
+  transition: visibility 100ms linear 0ms, opacity 300ms linear 0ms;
+}
+div.modal#modalPortafolio img {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+  -webkit-transition: visibility 100ms linear 300ms, opacity 300ms linear 300ms;
+  -moz-transition: visibility 100ms linear 300ms, opacity 300ms linear 300ms;
+  -ms-transition: visibility 100ms linear 300ms, opacity 300ms linear 300ms;
+  -o-transition: visibility 100ms linear 300ms, opacity 300ms linear 300ms;
+  transition: visibility 100ms linear 300ms, opacity 300ms linear 300ms;
+}
+div.modal#modalPortafolio img.invisible {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: opacity 300ms linear 300ms, visibility 100ms linear 500ms;
+  -moz-transition: opacity 300ms linear 300ms, visibility 100ms linear 500ms;
+  -ms-transition: opacity 300ms linear 300ms, visibility 100ms linear 500ms;
+  -o-transition: opacity 300ms linear 300ms, visibility 100ms linear 500ms;
+  transition: opacity 300ms linear 300ms, visibility 100ms linear 500ms;
+}
+.spriteServicios {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url('../img/sprite-servicios.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.spriteServicios#adornoPie {
+  background-position: 0 -1336px;
+  height: 114px;
+  width: 944px;
+}
+.spriteServicios#btnCerrar {
+  background-position: -725px -626px;
+  height: 14px;
+  left: auto;
+  margin: 0;
+  width: 14px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.spriteServicios#logoCorp {
+  background-position: -235px -908px;
+  height: 146px;
+  margin: 20px 0 0 20px;
+  width: 100px;
+}
+.spriteServicios#logoPub {
+  background-position: -381px -903px;
+  height: 156px;
+  margin: 15px 0 0 0;
+  width: 173px;
+}
+.spriteServicios#logoEdit {
+  background-position: -583px -906px;
+  height: 150px;
+  margin: 20px 0 0 20px;
+  width: 176px;
+}
+.spriteServicios#logoIlust {
+  background-position: -783px -903px;
+  height: 157px;
+  margin: 10px 0 0 15px;
+  width: 170px;
+}
+.spriteServicios#logoWeb {
+  background-position: 0 -908px;
+  height: 146px;
+  margin: 25px 0 0 15px;
+  width: 182px;
+}
+.spriteServicios#titCorp {
+  background-position: -468px -857px;
+  height: 35px;
+  width: 400px;
+}
+.spriteServicios#titPub {
+  background-position: -468px -807px;
+  height: 45px;
+  width: 350px;
+}
+.spriteServicios#titEdit {
+  background-position: -468px -717px;
+  height: 45px;
+  width: 303px;
+}
+.spriteServicios#titIlust {
+  background-position: -468px -679px;
+  height: 36px;
+  width: 247px;
+}
+.spriteServicios#titWeb {
+  background-position: -468px -769px;
+  height: 35px;
+  width: 305px;
+}
+#cuerpoGeneral #contServicios + #adornoPie.visible {
+  margin-top: 40px;
+}
+#serviciosLema {
+  background-position: 0 -625px;
+  margin-top: 182px;
+  width: 312px;
+  height: 240px;
+}
+.tapaInicial #serviciosLema.animacionActivada {
+  margin-left: 505px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+}
+#serviciosIlustracion {
+  background-position: 0 0;
+  height: 625px;
+  margin-top: 45px;
+  width: 599px;
+}
+.tapaInicial #serviciosIlustracion.animacionActivada {
+  margin-left: -25px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+}
+.contenidoVista #serviciosIlustracion {
+  margin: -20px 0 0 -75px;
+}
+#serviciosBtn {
+  background-position: -805px -1px;
+  margin-top: 445px;
+  width: 147px;
+  height: 41px;
+}
+#serviciosBtn:hover {
+  background-position: -805px -43px;
+}
+.tapaInicial #serviciosBtn.animacionActivada {
+  margin-left: 570px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+}
+.tapaInicial #serviciosMouseCableado {
+  background-position: -608px -85px;
+  height: 500px;
+  margin: 115px -345px 0 0;
+  width: 345px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 400ms linear 0ms, visibility 100ms linear 400ms;
+  -moz-transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 400ms linear 0ms, visibility 100ms linear 400ms;
+  -ms-transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 400ms linear 0ms, visibility 100ms linear 400ms;
+  -o-transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 400ms linear 0ms, visibility 100ms linear 400ms;
+  transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 400ms linear 0ms, visibility 100ms linear 400ms;
+}
+.contenidoVista #serviciosMouseCableado {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+}
+.tapaInicial #serviciosMouseCableado.animacionActivada {
+  margin-right: 35px;
+  -webkit-transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms, visibility 100ms linear 0ms;
+  -moz-transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms, visibility 100ms linear 0ms;
+  -ms-transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms, visibility 100ms linear 0ms;
+  -o-transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms, visibility 100ms linear 0ms;
+  transition: margin-right 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms, visibility 100ms linear 0ms;
+}
+#serviciosAvionCayendo {
+  background-position: -600px 0;
+  height: 43px;
+  width: 52px;
+}
+.tapaInicial #serviciosAvionCayendo.animacionActivada {
+  margin: 120px 0 0 530px;
+  -webkit-transition: margin 600ms cubic-bezier(1, -0.53, 0.405, 1.425) 400ms, opacity 400ms linear 700ms;
+  -moz-transition: margin 600ms cubic-bezier(1, -0.53, 0.405, 1.425) 400ms, opacity 400ms linear 700ms;
+  -ms-transition: margin 600ms cubic-bezier(1, -0.53, 0.405, 1.425) 400ms, opacity 400ms linear 700ms;
+  -o-transition: margin 600ms cubic-bezier(1, -0.53, 0.405, 1.425) 400ms, opacity 400ms linear 700ms;
+  transition: margin 600ms cubic-bezier(1, -0.53, 0.405, 1.425) 400ms, opacity 400ms linear 700ms;
+}
+.enFundido #serviciosAvionCayendo,
+.tapaInicial.enFundido #serviciosAvionCayendo {
+  margin: 120px 0 0 530px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: opacity 300ms linear 0ms;
+  -moz-transition: opacity 300ms linear 0ms;
+  -ms-transition: opacity 300ms linear 0ms;
+  -o-transition: opacity 300ms linear 0ms;
+  transition: opacity 300ms linear 0ms;
+}
+.contenidoVista #serviciosAvionCayendo {
+  margin: 215px 0 0 350px;
+}
+.contenidoVista.enFundido #serviciosAvionCayendo {
+  margin: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: opacity 300ms linear 0ms;
+  -moz-transition: opacity 300ms linear 0ms;
+  -ms-transition: opacity 300ms linear 0ms;
+  -o-transition: opacity 300ms linear 0ms;
+  transition: opacity 300ms linear 0ms;
+}
+#serviciosAviones {
+  background-position: -652px 0;
+  height: 82px;
+  margin: 220px 0 0 430px;
+  width: 151px;
+}
+.tapaInicial #serviciosAviones.animacionActivada {
+  margin: 85px 0 0 625px;
+  -webkit-transition: margin 800ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 700ms;
+  -moz-transition: margin 800ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 700ms;
+  -ms-transition: margin 800ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 700ms;
+  -o-transition: margin 800ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 700ms;
+  transition: margin 800ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 700ms;
+}
+.enFundido #serviciosAviones,
+.tapaInicial.enFundido #serviciosAviones {
+  margin: 85px 0 0 625px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: opacity 300ms linear 0ms;
+  -moz-transition: opacity 300ms linear 0ms;
+  -ms-transition: opacity 300ms linear 0ms;
+  -o-transition: opacity 300ms linear 0ms;
+  transition: opacity 300ms linear 0ms;
+}
+.contenidoVista #serviciosAviones {
+  margin: 145px 0 0 390px;
+}
+.contenidoVista.enFundido #serviciosAviones {
+  margin: 220px 0 0 430px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  -webkit-transition: opacity 300ms linear 0ms;
+  -moz-transition: opacity 300ms linear 0ms;
+  -ms-transition: opacity 300ms linear 0ms;
+  -o-transition: opacity 300ms linear 0ms;
+  transition: opacity 300ms linear 0ms;
+}
+.tapaInicial #serviciosMousePunteado,
+.enFundido #serviciosMousePunteado {
+  visibility: hidden;
+}
+.contenidoVista #serviciosMousePunteado {
+  background-position: -766px -586px;
+  height: 133px;
+  margin: 415px 0 0 165px;
+  width: 187px;
+}
+#iconoGrisServicios {
+  background-position: -311px -625px;
+  height: 153px;
+  margin-top: 15px;
+  width: 157px;
+}
+#serviciosTitulo {
+  background-position: -468px -627px;
+  left: 111px;
+  height: 49px;
+  width: 234px;
+}
+.spriteSomos {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url('../img/sprite-somos.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.spriteSomos#adornoPie {
+  background-position: -1px -904px;
+  height: 144px;
+  width: 571px;
+}
+#cuerpoGeneral #contSomos + #adornoPie.visible {
+  margin-top: 0;
+}
+#somosLema {
+  background-position: 0 -657px;
+  margin-top: 183px;
+  width: 388px;
+  height: 240px;
+}
+.tapaInicial #somosLema.animacionActivada {
+  margin-left: 462px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+}
+#somosIlustracion {
+  background-position: 0 0;
+  height: 651px;
+  margin-top: 5px;
+  width: 655px;
+}
+.tapaInicial #somosIlustracion.animacionActivada {
+  margin-left: -20px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+}
+.contenidoVista #somosIlustracion {
+  margin: -25px 0 0 -36px;
+}
+#somosBtn {
+  background-position: -402px -824px;
+  margin-top: 450px;
+  width: 147px;
+  height: 41px;
+}
+#somosBtn:hover {
+  background-position: -555px -824px;
+}
+.tapaInicial #somosBtn.animacionActivada {
+  margin-left: 576px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+}
+#iconoGrisSomos {
+  background-position: -402px -657px;
+  width: 134px;
+  height: 161px;
+}
+#somosTitulo {
+  background-position: -543px -657px;
+  left: 180px;
+  width: 165px;
+  height: 49px;
+}
+.spriteContacto {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url('../img/sprite-contacto.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.spriteContacto#adornoPie {
+  background-position: 0 -851px;
+  height: 137px;
+  width: 687px;
+}
+#cuerpoGeneral #contContactanos + #adornoPie.visible {
+  margin-top: 13px;
+}
+#contactoLema {
+  background-position: 0 -597px;
+  margin-top: 196px;
+  width: 313px;
+  height: 240px;
+}
+.tapaInicial #contactoLema.animacionActivada {
+  margin-left: 498px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms, opacity 400ms linear 400ms;
+}
+#contactoIlustracion {
+  background-position: 0 0;
+  height: 546px;
+  margin-top: 55px;
+  width: 606px;
+}
+.tapaInicial #contactoIlustracion.animacionActivada {
+  margin-left: -20px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 500ms, opacity 400ms linear 700ms;
+}
+.contenidoVista #contactoIlustracion {
+  margin: 35px 0 0 -45px;
+}
+#contactoBtn {
+  background-position: -325px -785px;
+  margin-top: 450px;
+  width: 147px;
+  height: 41px;
+}
+#contactoBtn:hover {
+  background-position: -478px -785px;
+}
+.tapaInicial #contactoBtn.animacionActivada {
+  margin-left: 576px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 900ms, opacity 400ms linear 1100ms;
+}
+#iconoGrisContacto {
+  background-position: -325px -597px;
+  width: 134px;
+  height: 172px;
+}
+#contactoTitulo {
+  background-position: -466px -597px;
+  left: 125px;
+  width: 220px;
+  height: 49px;
+}
+#contContactanos .cajaLogotemaVista .franjaGris {
+  margin-top: 70px;
+}
+#contContactanos ~ #ilustracion-twitter {
+  display: none;
+  height: 105px;
+  margin-left: 345px;
+  width: 210px;
+  bottom: 64px;
+  left: 50%;
+  position: absolute;
+}
+#contContactanos ~ #ilustracion-twitter #bocadillo-twitter {
+  background-position: -461px -688px;
+  height: 74px;
+  margin-left: 99px;
+  visibility: hidden;
+  width: 99px;
+  z-index: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+  left: 0;
+  position: absolute;
+  top: 28px;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+}
+#contContactanos ~ #ilustracion-twitter #pajaro-twitter {
+  background-position: -564px -656px;
+  float: right;
+  height: 105px;
+  position: relative;
+  width: 123px;
+  z-index: 2;
+}
+#contContactanos ~ #ilustracion-twitter #pajaro-twitter:hover + #bocadillo-twitter,
+#contContactanos ~ #ilustracion-twitter #bocadillo-twitter:hover {
+  margin-left: 0;
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  zoom: 1;
+  -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 300ms, visibility 100ms linear 300ms;
+  -moz-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 300ms, visibility 100ms linear 300ms;
+  -ms-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 300ms, visibility 100ms linear 300ms;
+  -o-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 300ms, visibility 100ms linear 300ms;
+  transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 300ms, visibility 100ms linear 300ms;
+}
+#contContactanos.contenidoVista ~ #ilustracion-twitter {
+  display: block;
+}
+.chromeframe {
+  background: #ccc;
+  color: #000;
+  left: 45%;
+  margin: 0;
+  padding: 0.2em 0;
+  position: fixed;
+  top: 45%;
+}
+html.ie #cabeceraGeneral {
+  border-bottom: 5px solid #c2dff0;
+}
+html.ie #cabeceraGeneral #cajaNavegacionCabecera {
+  width: 580px;
+}
+html.ie #cabeceraGeneral .linksNavCabecera {
+  font-weight: bold;
+}
+html.ie #cabeceraGeneral .linksNavCabecera span {
+  visibility: hidden;
+}
+html.ie #cabeceraGeneral .linksNavCabecera:hover span,
+html.ie #cabeceraGeneral .linksNavCabecera.vistaActiva span {
+  visibility: visible;
+}
+html.ie button#btnVolver i {
+  vertical-align: bottom;
+}
+html.ie #cuerpoGeneral #adornoPie.spritePortafolio {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-portafolio.png");
+  background-position: 0 -904px;
+}
+html.ie #cuerpoGeneral #adornoPie.spriteServicios {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-servicios.png");
+  background-position: 0 -1336px;
+}
+html.ie #cuerpoGeneral #adornoPie.spriteSomos {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-somos.png");
+  background-position: -1px -904px;
+}
+html.ie #cuerpoGeneral #adornoPie.spriteContacto {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-contacto.png");
+  background-position: 0 -851px;
+}
+html.ie .tapaInicial .animacionTapa#portafolioLema {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-portafolio.png");
+  background-position: 0 -646px;
+}
+html.ie .tapaInicial .animacionTapa#portafolioIlustracion {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-portafolio.png");
+  background-position: 0 0;
+}
+html.ie .tapaInicial .animacionTapa#portafolioBtn {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-portafolio.png");
+  background-position: -420px -822px;
+}
+html.ie .tapaInicial .animacionTapa#serviciosLema {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-servicios.png");
+  background-position: 0 -625px;
+}
+html.ie .tapaInicial .animacionTapa#serviciosIlustracion {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-servicios.png");
+  background-position: 0 0;
+}
+html.ie .tapaInicial .animacionTapa#serviciosBtn {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-servicios.png");
+  background-position: -805px -1px;
+}
+html.ie .tapaInicial .animacionTapa#serviciosMouseCableado {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-servicios.png");
+  background-position: -608px -85px;
+}
+html.ie .tapaInicial .animacionTapa#serviciosAviones {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-servicios.png");
+  background-position: -652px 0;
+}
+html.ie .tapaInicial .animacionTapa#serviciosAvionCayendo {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-servicios.png");
+  background-position: -600px 0;
+}
+html.ie .tapaInicial .animacionTapa#somosLema {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-somos.png");
+  background-position: 0 -657px;
+}
+html.ie .tapaInicial .animacionTapa#somosIlustracion {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-somos.png");
+  background-position: 0 0;
+}
+html.ie .tapaInicial .animacionTapa#somosBtn {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-somos.png");
+  background-position: -402px -824px;
+}
+html.ie .tapaInicial .animacionTapa#contactoLema {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-contacto.png");
+  background-position: 0 -597px;
+}
+html.ie .tapaInicial .animacionTapa#contactoIlustracion {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-contacto.png");
+  background-position: 0 0;
+}
+html.ie .tapaInicial .animacionTapa#contactoBtn {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-contacto.png");
+  background-position: -325px -785px;
+}
+html.ie .spritePortafolio.carousel-control.left {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-portafolio.png");
+  background-position: -686px -714px;
+}
+html.ie .spritePortafolio.carousel-control.right {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-portafolio.png");
+  background-position: -709px -714px;
+}
+html.ie .tapaInicial .cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas .cajaCarousel.carouselActivo {
+  visibility: hidden;
+}
+html.ie .contenidoVista .cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas .cajaCarousel.carouselActivo {
+  visibility: visible;
+}
+html.ie #contContactanos ~ #ilustracion-twitter #pajaro-twitter {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-contacto.png");
+  background-position: -564px -656px;
+}
+html.ie #contContactanos ~ #ilustracion-twitter #bocadillo-twitter {
+  background: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
+  zoom: 1;
+  background-image: url("../img/sprite-contacto.png");
+  background-position: -461px -688px;
+}
