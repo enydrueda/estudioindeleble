@@ -137,7 +137,7 @@ span.frase-normal-resaltada {
   padding: 0;
   width: 100%;
   left: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   -webkit-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
   -moz-transition: height 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
@@ -237,7 +237,7 @@ span.frase-normal-resaltada {
   position: inherit;
   width: 209px;
   left: 50%;
-  position: absolute;
+  position: fixed;
   top: 33px;
   -webkit-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
   -moz-transition: top 300ms cubic-bezier(1, -0.53, 0.405, 1.425) 200ms;
@@ -370,22 +370,23 @@ span.frase-normal-resaltada {
   margin: 0;
   padding: 0;
   width: 100%;
+  padding-bottom: 65px;
 }
 #cuerpoGeneral .container {
   position: relative;
 }
 #cuerpoGeneral .container.tapaInicial {
   height: 706px;
-  margin-top: 175px;
+  margin-top: 110px;
 }
 #cuerpoGeneral .container.contenidoVista {
   height: 832px;
-  margin-top: 47px;
+  margin-top: 110px;
 }
 #cuerpoGeneral #contHome {
   height: 727px;
   width: 572px;
-  margin-top: 180px;
+  margin-top: 110px;
 }
 #cuerpoGeneral #adornoPie {
   margin: 250px auto 0 auto;
@@ -438,6 +439,7 @@ span.frase-normal-resaltada {
 }
 .cajaLateralContenido.latDer div.texto {
   margin-top: 375px;
+  padding: 5px 10px;
 }
 .cajaLateralContenido.cajaCentral {
   width: 940px;
@@ -876,16 +878,17 @@ span.frase-normal-resaltada {
 }
 .enFundido .cajaLateralContenido {
   height: 0;
-  visibility: hidden;
+  visibility: visible;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  opacity: 0;
+  opacity: 1;
   zoom: 1;
   -webkit-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
   -moz-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
   -ms-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
   -o-transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
   transition: height 100ms linear 300ms, opacity 300ms linear 0ms, visibility 100ms linear 300ms;
+  padding-bottom: 100px;
 }
 button#btnVolver {
   color: #00b3e3;
@@ -946,7 +949,7 @@ button#btnVolver {
   zoom: 1;
 }
 .tapaInicial #manchaFondo {
-  margin-left: -901px;
+  margin-left: -120%;
 }
 .tapaInicial [id*="Lema"] {
   margin-left: -296px;
@@ -993,6 +996,17 @@ button#btnVolver {
   background-position: 0 0;
   width: 901px;
 }
+.tapaInicial #manchaFondo {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+
+.tapaInicial #manchaFondo.animacionActivada {
+  width: 901px;
+  height: 706px;
+}
 .tapaInicial #manchaFondo.animacionActivada {
   margin-left: 20px;
   -webkit-transition: margin-left 500ms cubic-bezier(1, -0.53, 0.405, 1.425) 0ms, opacity 300ms linear 200ms;
@@ -1031,10 +1045,10 @@ button#btnVolver {
   margin: 0 0 69px -286px;
 }
 #homeLema {
-  background-position: -335px -368px;
+  background-position: -335px -367px;
   height: 25px;
   width: 193px;
-  margin: 0 0 0 -97px;
+  margin: 0 0 30px -97px;
 }
 #homePersonajes {
   background-position: 0 0;
@@ -1892,4 +1906,1176 @@ html.ie #contContactanos ~ #ilustracion-twitter #bocadillo-twitter {
   zoom: 1;
   background-image: url("../img/sprite-contacto.png");
   background-position: -461px -688px;
+}
+.items.animacionActivada {
+  z-index: 999;
+}
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+  #pieGeneral {
+    padding-bottom: 20px;
+  }
+  #pieGeneral .span5 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .spriteManchas.animacionActivada {
+    background-size: 170% auto;
+    width: 70% !important;
+    top: -60px !important;
+  }
+  .tapaInicial #manchaFondo.animacionActivada {
+    margin-left: 15%;
+  }
+  .tapaInicial #manchaFondo.animacionActivada {
+    height: 510px;
+    position: relative;
+  }
+  #portafolioIlustracion.animacionActivada {
+    background-position: 0 0;
+    height: 440px;
+    margin-top: -65px;
+    width: 400px;
+    background-size: 132% auto;
+  }
+  .tapaInicial #portafolioIlustracion.animacionActivada {
+    margin-left: 20px;
+  }
+  #portafolioLema.animacionActivada {
+    background-position: 0px -394px;
+    margin-top: 10%;
+    width: 200px;
+    height: 150px;
+    background-size: 220% auto;
+  }
+  .tapaInicial #portafolioLema.animacionActivada {
+    margin-left: 50%;
+  }
+  #portafolioBtn {
+    margin-top: 260px;
+  }
+  .tapaInicial #portafolioBtn.animacionActivada {
+    margin-left: 52%;
+  }
+  #cuerpoGeneral {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  #cuerpoGeneral .container.tapaInicial {
+    height: auto;
+  }
+  #serviciosIlustracion.animacionActivada {
+    background-position: 0 0;
+    height: 430px;
+    margin-top: -50px;
+    width: 400px;
+    background-size: 165% auto;
+  }
+  .tapaInicial #serviciosIlustracion.animacionActivada {
+    margin-left: 40px;
+  }
+  .tapaInicial #serviciosMouseCableado {
+    background-position: -445px -61px;
+    background-size: 200% auto;
+    height: 362px;
+    margin: 10px 0 0 0;
+    width: 345px;
+  }
+  .tapaInicial #serviciosAviones.animacionActivada {
+    margin: -10px 0 0 55%;
+  }
+  .tapaInicial #serviciosAvionCayendo.animacionActivada {
+    margin: 50px 0 0 47%;
+  }
+  #serviciosLema {
+    background-position: 0px -400px;
+    margin-top: 100px;
+    width: 200px;
+    height: 180px;
+    background-size: 310% auto;
+  }
+  .tapaInicial #serviciosBtn.animacionActivada {
+    margin-left: 37%;
+  }
+  #serviciosBtn {
+    margin-top: 300px;
+  }
+  .tapaInicial #serviciosLema.animacionActivada {
+    margin-left: 55%;
+  }
+  #contSomos.tapaInicial #manchaFondo, #contContactanos.tapaInicial #manchaFondo {
+    background-position: 0 0;
+  }
+  #somosIlustracion.animacionActivada {
+    height: 400px;
+    width: 400px;
+    background-size: 110% auto;
+  }
+  .tapaInicial #somosIlustracion.animacionActivada {
+    margin-left: 10%;
+  }
+  #somosLema {
+    background-position: 0px -385px;
+    margin-top: 70px;
+    width: 230px;
+    height: 140px;
+    background-size: 180% auto;
+  }
+  .tapaInicial #somosLema.animacionActivada {
+    margin-left: 50%;
+  }
+  #somosBtn {
+    margin-top: 250px;
+  }
+  .tapaInicial #somosBtn.animacionActivada {
+    margin-left: 53%;
+  }
+  #contactoIlustracion.animacionActivada {
+    height: 370px;
+    width: 400px;
+    background-size: 116% auto;
+    left: 50%;
+    margin-top: 25px;
+  }
+  .tapaInicial #contactoIlustracion.animacionActivada {
+    margin-left: -400px;
+  }
+  #contactoLema {
+    background-position: 0 -380px;
+    margin-top: 70px;
+    width: 200px;
+    height: 160px;
+    background-size: 220% auto;
+    left: 50%;
+  }
+  .tapaInicial #contactoLema.animacionActivada {
+    margin-left: 10px;
+  }
+  #contactoBtn {
+    margin-top: 250px;
+    left: 50%;
+  }
+  .tapaInicial #contactoBtn.animacionActivada {
+    margin-left: 40px;
+  }
+  .cajaLateralContenido.latDer {
+    width: 50%;
+    position: relative;
+    left: 50%;
+  }
+  .cajaLateralContenido.latIzq {
+    width: 45%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 5px 15px;
+  }
+  .cajaLateralContenido.cajaCentral {
+    width: auto;
+    padding: 0 10px;
+  }
+  #logoIndelebleCont {
+    position: relative;
+  }
+  .cajaLogotemaVista {
+    position: relative;
+    margin: 0;
+  }
+  .cajaLateralContenido.latDer div.texto {
+    margin: 0;
+  }
+  .contenidoVista #manchaFondo {
+    background-position: 100% 0px;
+    width: 50%;
+    background-size: 275% auto;
+  }
+  .contenidoVista #portafolioIlustracion {
+    margin: -30px 0 0 0px;
+  }
+  #portafolioIlustracion {
+    height: 530px;
+    width: 50%;
+    background-size: 132% auto;
+  }
+  .cajaLateralContenido div#cajaControlesGaleriaPortafolio {
+    margin-top: 0px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 610px;
+  }
+  .cajaLateralContenido div#cajaControlesGaleriaPortafolio {
+    min-height: 85px;
+  }
+  .cajaLateralContenido.cajaCentral {
+    position: relative;
+  }
+  .cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas .cajaCarousel {
+    width: 100%;
+  }
+  .cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas .cajaCarousel {
+    left: 0;
+  }
+  .cajaLateralContenido div.cajaCarousel button.imgsMinPortafolio + button.imgsMinPortafolio {
+    margin-left: 0;
+  }
+  .cajaLateralContenido div.cajaCarousel button.imgsMinPortafolio {
+    height: 91%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 29%;
+    background-size: 200% 100%;
+    margin: 0 3%;
+  }
+  .cajaLateralContenido div.cajaCarousel div.carousel-inner {
+    margin-bottom: 0px;
+  }
+  .cajaLateralContenido div.cajaCarousel button.imgsMinPortafolio:hover {
+    background-position: -100% 0;
+  }
+  #cuerpoGeneral #adornoPie {
+    display: none;
+  }
+  #cuerpoGeneral #adornoPie.visible {
+    display: block;
+  }
+  #serviciosTitulo {
+    background-position: -310px -406px;
+    left: 100px;
+    width: 170px;
+    height: 42px;
+    background-size: 370% auto;
+  }
+  .contenidoVista #serviciosIlustracion {
+    margin: 0;
+    width: 50%;
+    height: 505px;
+    background-size: 165% auto;
+  }
+  .contenidoVista #serviciosMousePunteado {
+    margin: 39% 0 0 20%;
+  }
+  .contenidoVista #serviciosAviones {
+    margin: 15% 0 0 42%;
+    background-size: 785% auto;
+    background-position: -365px 0;
+    width: 65px;
+    height: 40px;
+  }
+  .contenidoVista #serviciosAvionCayendo {
+    margin: 22% 0 0 34%;
+    width: 40px;
+    height: 30px;
+    background-size: 1500% auto;
+    background-position: -371px 0;
+  }
+  .cajaLateralContenido.cajaCentral {
+    width: 100%;
+    padding: 0;
+  }
+  .cajaLateralContenido div#cajaControlesSemiPopupsServicios #franjaPosterior {
+    width: 100%;
+    left: 0;
+  }
+  .cajaLateralContenido button.enlacesTiposServicios {
+    float: none;
+  }
+  .cajaLateralContenido button.enlacesTiposServicios.spriteServicios {
+    display: inline-block;
+  }
+  .cajaLateralContenido div#cajaControlesSemiPopupsServicios {
+    width: 100%;
+    text-align: center;
+  }
+  .cajaLateralContenido button.enlacesTiposServicios + button.spriteServicios.enlacesTiposServicios {
+    margin-left: 5%;
+  }
+  .cajaLateralContenido div#cajaControlesSemiPopupsServicios #franjaPosterior {
+    width: 70%;
+    left: 0;
+    margin: 0 15%;
+  }
+  .spriteServicios#adornoPie {
+    background-position: 0 100%;
+    height: 118px;
+    width: 100%;
+    background-size: 100% auto;
+  }
+  .cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas {
+    padding: 25px;
+    width: 90%;
+    margin: 0 2% !important;
+  }
+  .cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante div.cajasInfografias#infoWeb div {
+    width: 63%;
+  }
+  .contenidoVista #somosIlustracion {
+    margin: 0;
+    width: 50%;
+    height: 60%;
+    background-size: 115% auto;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    background-position: 100% 0;
+    width: 50%;
+    height: 65%;
+    background-size: 250% auto;
+  }
+  .contenidoVista #contactoIlustracion {
+    background-position: 0 0;
+    height: 53%;
+    margin: 0;
+    width: 50%;
+    background-size: 117% auto;
+  }
+  .cajaLateralContenido form input, .cajaLateralContenido form textarea {
+    width: 95%;
+  }
+  #contContactanos ~ #ilustracion-twitter {
+    margin-left: 0;
+    bottom: 100px;
+    left: initial;
+    right: 0;
+  }
+  .spriteContacto#adornoPie {
+    background-position: 0 100%;
+    height: 137px;
+    width: 75%;
+    margin: 50px 12.5% 0 !important;
+    background-size: 100% auto;
+  }
+  .cajaLateralContenido button.enlacesTiposServicios.spritePortafolio {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 950px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 59%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 58%;
+  }
+  .cajaLateralContenido form input, .cajaLateralContenido form textarea {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 58%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 56%;
+  }
+}
+@media screen and (max-width: 910px) {
+  .contenidoVista #portafolioIlustracion {
+    height: 500px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 57%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 56%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 55%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 59%;
+  }
+}
+@media screen and (max-width: 885px) {
+  .tapaInicial #manchaFondo.animacionActivada {
+    height: 480px;
+  }
+  .spriteSomos#adornoPie {
+    background-position: 0 100%;
+    height: 144px;
+    width: 80%;
+    background-size: 100% auto;
+    margin: 0 20% !important;
+  }
+  .contenidoVista #contactoIlustracion {
+    height: 49%;
+  }
+}
+@media screen and (max-width: 875px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 55%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 53%;
+  }
+}
+@media screen and (max-width: 865px) {
+  .contenidoVista #portafolioIlustracion {
+    height: 475px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 520px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 54%;
+  }
+}
+@media screen and (max-width: 845px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 53%;
+  }
+  .spriteServicios#adornoPie {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .tapaInicial #portafolioIlustracion.animacionActivada {
+    margin-left: -200px;
+    left: 50%;
+    margin-top: -100px;
+  }
+  .spriteManchas.animacionActivada {
+    top: 140px !important;
+  }
+  #cuerpoGeneral .container.tapaInicial {
+    margin-top: 150px;
+    height: 575px;
+  }
+  .tapaInicial #portafolioLema.animacionActivada {
+    margin-left: -150px;
+    left: 50%;
+    margin-top: 350px;
+  }
+  #portafolioIlustracion {
+    margin-top: -100px;
+  }
+  #cuerpoGeneral .container.tapaInicial {
+    margin-top: 150px;
+  }
+  .tapaInicial #portafolioBtn.animacionActivada {
+    margin-left: 55%;
+  }
+  #portafolioBtn {
+    margin-top: 400px;
+  }
+  .tapaInicial #serviciosIlustracion.animacionActivada {
+    margin-left: -200px;
+  }
+  #serviciosIlustracion.animacionActivada {
+    left: 50%;
+    margin-top: -100px;
+  }
+  .tapaInicial #serviciosMouseCableado {
+    margin: 225px 0 0 0;
+  }
+  .tapaInicial #serviciosMouseCableado.animacionActivada {
+    margin-right: -10px;
+  }
+  .tapaInicial #serviciosAviones.animacionActivada {
+    margin: 250px 0 0 55%;
+  }
+  .tapaInicial #serviciosAvionCayendo.animacionActivada {
+    margin: 300px 0 0 25%;
+  }
+  #serviciosLema {
+    left: 50%;
+    margin-top: 320px;
+  }
+  .tapaInicial #serviciosLema.animacionActivada {
+    margin-left: -180px;
+  }
+  .tapaInicial #serviciosBtn.animacionActivada {
+    margin-left: 55%;
+  }
+  #serviciosBtn {
+    margin-top: 385px;
+  }
+  .tapaInicial #somosIlustracion.animacionActivada {
+    margin-left: -200px;
+  }
+  #somosIlustracion.animacionActivada {
+    left: 50%;
+    margin-top: -100px;
+  }
+  #somosLema {
+    margin-top: 300px;
+    left: 50%;
+  }
+  .tapaInicial #somosLema.animacionActivada {
+    margin-left: -200px;
+  }
+  #somosBtn {
+    margin-top: 350px;
+  }
+  #contactoIlustracion.animacionActivada {
+    left: 50%;
+    margin-top: -100px;
+  }
+  .tapaInicial #contactoIlustracion.animacionActivada {
+    margin-left: -200px;
+  }
+  .tapaInicial #contactoLema.animacionActivada {
+    margin-left: -200px;
+    margin-top: 275px;
+  }
+  #contactoBtn {
+    margin-top: 335px;
+  }
+  #portafolioTitulo {
+    left: 30px;
+  }
+  .contenidoVista #portafolioIlustracion {
+    height: 455px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 500px;
+  }
+  #logoIndelebleCont {
+    background-position: -1px -294px;
+    height: 210px;
+    margin: 10px auto;
+    width: 300px;
+    background-size: 94% auto;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 52%;
+  }
+  #somosTitulo {
+    left: 80px;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 51%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .contenidoVista #contactoIlustracion {
+    height: 45%;
+  }
+  #contactoTitulo {
+    left: 65px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .cajaLateralContenido div#cajaControlesGaleriaPortafolio {
+    min-height: 165px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 51%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 54%;
+  }
+  #cuerpoGeneral #contPortafolio + #adornoPie.visible {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 805px) {
+  .tapaInicial #manchaFondo.animacionActivada {
+    height: 420px;
+  }
+  #portafolioLema.animacionActivada {
+    background-position: 0px -257px;
+    width: 135px;
+    height: 100px;
+    background-size: 215% auto;
+  }
+  #portafolioBtn {
+    margin-top: 375px;
+  }
+  .contenidoVista #portafolioIlustracion {
+    height: 440px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 475px;
+  }
+  #portafolioTitulo {
+    background-position: -240px -348px;
+    width: 200px;
+    height: 48px;
+    background-size: 200% auto;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 50%;
+  }
+  .cajaLateralContenido button.enlacesTiposServicios + button.spriteServicios.enlacesTiposServicios {
+    margin-left: 1%;
+  }
+  .cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas.flotante div.cajasInfografias div {
+    width: 60%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 49%;
+  }
+  .spriteContacto#adornoPie {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 785px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 49%;
+  }
+}
+@media screen and (max-width: 775px) {
+  .contenidoVista #somosIlustracion {
+    height: 47%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 48%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .contenidoVista #portafolioIlustracion {
+    height: 420px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 460px;
+  }
+  .cajaLateralContenido div.cajaCarousel button.imgsMinPortafolio {
+    height: 75%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #serviciosLema {
+    background-position: 0px -341px;
+    margin-top: 300px;
+    width: 170px;
+    height: 130px;
+    background-size: 305% auto;
+  }
+  #serviciosBtn {
+    margin-top: 340px;
+  }
+  #serviciosIlustracion {
+    margin-top: -130px;
+  }
+  .tapaInicial #serviciosAvionCayendo.animacionActivada {
+    margin: 260px 0 0 17%;
+  }
+  .tapaInicial #serviciosAviones.animacionActivada {
+    margin: 230px 0 0 50%;
+  }
+  #somosLema {
+    background-position: 0px -268px;
+    width: 160px;
+    height: 97px;
+  }
+  .tapaInicial #somosLema.animacionActivada {
+    margin-left: -175px;
+  }
+  #somosBtn {
+    margin-top: 330px;
+  }
+  #contactoLema {
+    background-position: 0 -285px;
+    margin-top: 70px;
+    width: 150px;
+    height: 120px;
+  }
+  .tapaInicial #contactoLema.animacionActivada {
+    margin-left: -150px;
+  }
+  #contactoBtn {
+    margin-top: 310px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 47%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 45%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 46%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 735px) {
+  .contenidoVista #contactoIlustracion {
+    height: 41%;
+  }
+}
+@media screen and (max-width: 725px) {
+  .tapaInicial #manchaFondo.animacionActivada {
+    height: 395px;
+  }
+  .contenidoVista #portafolioIlustracion {
+    height: 400px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 440px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 45%;
+  }
+  .spriteServicios#adornoPie {
+    height: 85px;
+  }
+  .spriteSomos#adornoPie {
+    height: 120px;
+    margin: 50px 20% 0 !important;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 44%;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 44%;
+  }
+  .cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contenidoVista #portafolioIlustracion {
+    height: 385px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 425px;
+  }
+  button#btnVolver {
+    margin-top: 0;
+  }
+  .spriteServicios#titPub {
+    background-position: 85% 57.5%;
+    height: 32px;
+    width: 300px;
+    background-size: 220% auto;
+  }
+  .spriteServicios#titEdit {
+    background-position: 90% 51%;
+    height: 32px;
+    width: 300px;
+    background-size: 220% auto;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 43%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 46%;
+  }
+}
+@media screen and (max-width: 688px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 43%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 42%;
+  }
+  #contactoTitulo {
+    background-position: 102% 64%;
+    width: 130px;
+    height: 36px;
+    background-size: 300% auto;
+    top: 7px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .tapaInicial #portafolioIlustracion.animacionActivada {
+    margin-top: -150px;
+  }
+  .tapaInicial #manchaFondo.animacionActivada {
+    height: 370px;
+  }
+  #portafolioIlustracion {
+    margin-top: -150px;
+  }
+  #cuerpoGeneral .container.tapaInicial {
+    margin-top: 200px;
+  }
+  .tapaInicial #portafolioLema.animacionActivada {
+    margin-top: 300px;
+  }
+  #portafolioBtn {
+    margin-top: 325px;
+  }
+  #serviciosLema {
+    background-position: 0px -257px;
+    margin-top: 300px;
+    width: 130px;
+    height: 105px;
+    background-size: 305% auto;
+  }
+  .tapaInicial #serviciosLema.animacionActivada {
+    margin-left: -150px;
+  }
+  .tapaInicial #serviciosBtn.animacionActivada {
+    margin-left: 50%;
+  }
+  .tapaInicial #serviciosMouseCableado {
+    background-position: -335px -46px;
+    background-size: 150% auto;
+    height: 272px;
+    width: 345px;
+  }
+  .tapaInicial #serviciosMouseCableado {
+    margin: 245px 0 0 0;
+  }
+  .tapaInicial #serviciosMouseCableado.animacionActivada {
+    margin-right: -60px;
+  }
+  .tapaInicial #somosLema.animacionActivada {
+    margin-left: -150px;
+  }
+  #cuerpoGeneral .container.tapaInicial#contSomos {
+    margin-top: 130px;
+  }
+  .contenidoVista #portafolioIlustracion {
+    height: 372px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 410px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 42%;
+  }
+  .cajaLateralContenido button.enlacesTiposServicios + button.spriteServicios.enlacesTiposServicios {
+    margin-left: 0%;
+  }
+  .spriteContacto#adornoPie {
+    height: 105px;
+    margin: 100px 12.5% 0 !important;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .contenidoVista #contactoIlustracion {
+    height: 38%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 41%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 41%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contenidoVista #manchaFondo {
+    height: 390px;
+  }
+  .contenidoVista #portafolioIlustracion {
+    height: 352px;
+  }
+  #cuerpoGeneral #contPortafolio + #adornoPie.visible {
+    margin-top: 70px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 40%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .tapaInicial #manchaFondo.animacionActivada {
+    height: 340px;
+  }
+  .tapaInicial #portafolioBtn.animacionActivada {
+    margin-left: 51%;
+  }
+  .spriteManchas.animacionActivada {
+    min-width: 420px;
+  }
+  .tapaInicial #manchaFondo.animacionActivada {
+    left: 50%;
+    margin-left: -211px;
+  }
+  .tapaInicial #contactoLema.animacionActivada {
+    margin-left: -130px;
+  }
+  .tapaInicial #contactoBtn.animacionActivada {
+    margin-left: 15px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 40%;
+  }
+  .cajaLateralContenido button.enlacesTiposServicios + button.spriteServicios.enlacesTiposServicios {
+    margin-left: -5%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 39%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 39%;
+  }
+  #serviciosTitulo {
+    background-position: -178px -229px;
+    left: 95px;
+    width: 100px;
+    height: 35px;
+  }
+  #somosTitulo {
+    background-position: 107% 66.5%;
+    width: 120px;
+    height: 49px;
+    background-size: 350% auto;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 38%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 43%;
+  }
+}
+@media screen and (max-width: 618px) {
+  .contenidoVista #serviciosIlustracion {
+    height: 38%;
+  }
+  .spriteServicios#adornoPie {
+    height: 75px;
+  }
+  .spriteSomos#adornoPie {
+    height: 100px;
+    margin: 150px 20% 0 !important;
+  }
+  .contenidoVista #contactoIlustracion {
+    height: 35%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .contenidoVista #portafolioIlustracion {
+    height: 333px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 368px;
+  }
+  .spriteServicios#adornoPie {
+    height: 62px;
+  }
+  .spriteServicios#titCorp {
+    background-position: 85% 61%;
+    height: 35px;
+    width: 300px;
+    background-size: 220% auto;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 37%;
+  }
+  .spriteContacto#adornoPie {
+    height: 90px;
+    margin: 150px 12.5% 0 !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  #cajaNavegacionCabecera.navbar .nav>li:last-child {
+    clear: both;
+    width: 100%;
+  }
+  #cajaNavegacionCabecera.navbar .nav>li:nth-child(8) {
+    background: none;
+  }
+  #cajaNavegacionCabecera.navbar .nav>li {
+    width: 24%;
+  }
+  #cajaNavegacionCabecera.navbar .nav>li.divisorMenuHeader {
+    width: 1px;
+  }
+  #cabeceraGeneral.activado {
+    height: 265px;
+  }
+  #btnActivarMenuCabecera.activado {
+    top: 256px;
+  }
+  #cabeceraGeneral #cajaNavegacionCabecera {
+    width: 100%;
+  }
+  #cuerpoGeneral #contHome {
+    width: 100%;
+  }
+  #homePersonajes {
+    position: relative;
+    width: 230px;
+    height: 438px;
+    left: 26px !important;
+    margin: -20px auto 0;
+    background-position: 0 0;
+    background-size: auto 70%;
+  }
+  #homeLogo {
+    background-size: auto 75%;
+    width: 400px;
+    height: 400px;
+    margin: -380px auto 20px;
+    background-position: -227px 148px;
+    position: relative;
+    left: 0 !important;
+  }
+  #homeLema {
+    margin: 0 auto 30px;
+    position: relative;
+    left: 0 !important;
+  }
+  #pieGeneral .span3 {
+    width: 180px;
+  }
+  #pieGeneral .span3.offset1 {
+    margin-left: 15%;
+    width: 135px;
+  }
+  #cuerpoGeneral #contHome {
+    height: auto;
+  }
+  #pieGeneral #formBoletin #campoBoletin {
+    width: 100px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 360px;
+  }
+  .contenidoVista #portafolioIlustracion {
+    height: 327px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 36%;
+  }
+  .cajaLateralContenido.cajaCentral div.cajasContenedorasBiseladas {
+    width: 86%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 36%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 39%;
+  }
+  .cajaLateralContenido form input, .cajaLateralContenido form textarea {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 580px) {
+  #logoIndelebleCont {
+    background-position: -1px -196px;
+    height: 145px;
+    width: 200px;
+  }
+  .contenidoVista #portafolioIlustracion {
+    height: 316px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 350px;
+  }
+  .cajaLateralContenido div.cajaCarousel button.imgsMinPortafolio {
+    height: 60%;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 35%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 35%;
+  }
+  .contenidoVista #contactoIlustracion {
+    height: 33%;
+  }
+}
+@media screen and (max-width: 555px) {
+  .contenidoVista #portafolioIlustracion {
+    height: 302px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 334px;
+  }
+  .spritePortafolio#adornoPie {
+    background-position: 0 100%;
+    height: 135px;
+    width: 100%;
+    background-size: 126% auto;
+    margin: 50px 10px 0 !important;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 33%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 34%;
+  }
+  .contenidoVista #contactoIlustracion {
+    height: 31%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .contenidoVista #manchaFondo {
+    height: 320px;
+  }
+  .contenidoVista #portafolioIlustracion {
+    height: 290px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 32%;
+  }
+  .cajaLateralContenido button.enlacesTiposServicios + button.spriteServicios.enlacesTiposServicios {
+    margin-left: -10%;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 33%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 36%;
+  }
+}
+@media screen and (max-width: 505px) {
+  .contenidoVista #portafolioIlustracion {
+    height: 275px;
+  }
+  .contenidoVista #manchaFondo {
+    height: 305px;
+  }
+  #portafolioTitulo {
+    left: 15px;
+  }
+  .cajaLateralContenido div#cajaControlesGaleriaPortafolio {
+    min-height: 245px;
+  }
+  .spritePortafolio#adornoPie {
+    margin: 30px 10px 0 !important;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 30%;
+  }
+  .spriteServicios#adornoPie {
+    height: 60px;
+  }
+  .spriteSomos#adornoPie {
+    height: 80px;
+    margin: 200px 20% 0 !important;
+  }
+  .contenidoVista #somosIlustracion {
+    height: 30%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 37%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 33%;
+  }
+}
+@media screen and (max-width: 505px) {
+  .contenidoVista #contactoIlustracion {
+    height: 29%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenidoVista #portafolioIlustracion {
+    height: 260px;
+  }
+  .contenidoVista #serviciosIlustracion {
+    height: 29%;
+  }
+  #contSomos.contenidoVista #manchaFondo, #contContactanos.contenidoVista #manchaFondo {
+    height: 33%;
+  }
+  .contenidoVista #contactoIlustracion {
+    height: 28%;
+  }
 }
